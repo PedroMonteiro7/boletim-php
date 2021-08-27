@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: tomato;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+section {
+    max-width: 80%;
+    width: 50%;
+    padding: 20px;
+    background-color: gray;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(53, 52, 52, 0.8);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.aprovado {
+    background-color: rgb(113, 218, 113);
+    width: 100vw;
+    height: 100vh;
+    color: green;
+}
+
+.reprovado {
+    background-color: rgb(228, 128, 128);
+}
+
+table { 
+    width: 100%;
+    text-align: left;
+    border: 1px solid black;
+    border-collapse: collapse; /* une as células */
+}
+
+table th {
+    background-color: rgb(66, 65, 65);
+}
+
+table td, th {
+    border: 1px solid white;
+    padding: 10px;
+}
