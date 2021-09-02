@@ -31,7 +31,15 @@
                 <td><?= $aluno["nome"] ?></td>
                 <td><?= $aluno["idade"] ?></td>
                 <td><?= $aluno["nota"] ?></td>
-                <td><?= $aluno["situacao"] ?></td>
+                <?php if ($aluno["situacao"] == "Aprovado(a)") { ?>
+                    <td class="aprovado"><?= $aluno["situacao"] ?></td>    
+                    <?php } else { ?>
+                        <td class="reprovado"><?= $aluno["situacao"] ?></td>
+                    <?php } ?>
+                <!-- ou
+                <td class="<?= $aluno["situacao"] == "Aprovado(a)"
+                    ? "aprovado" : "reprovado" ?>">
+                    <?= isset($aluno["situacao"]) ? $aluno["situacao"] : "" ?></td> -->
             </tr>
             <?php
             }

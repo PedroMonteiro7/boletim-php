@@ -30,13 +30,16 @@ h1 {
 
 .aprovado {
     background-color: rgb(113, 218, 113);
-    width: 100vw;
-    height: 100vh;
     color: green;
+    display: flex;
+    justify-content: center
 }
 
 .reprovado {
     background-color: rgb(228, 128, 128);
+    color: red;
+    display: flex;
+    justify-content: center;
 }
 
 table { 

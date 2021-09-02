@@ -48,9 +48,9 @@ alterarNotaAluno($alunos, "Isabela", 20);
 function situacaoAlunos(array &$turma) {
     foreach($turma as $chave => $aluno) {
         if($aluno["nota"] >= 50) {
-            $turma[$chave]["situacao"] = '<span class="aprovado">Aprovado(a)</span>';
+            $turma[$chave]["situacao"] = 'Aprovado(a)';
         } else {
-            $turma[$chave]["situacao"] = '<span class="reprovado">Reprovado(a)</span>';
+            $turma[$chave]["situacao"] = 'Reprovado(a)';
         }
     }
 }
